@@ -1,0 +1,82 @@
+/* styles de base */
+body
+{
+	text-align: center;
+	font-family: verdana, sans-serif;
+	font-size: 80%;
+}
+
+body *
+{
+	box-sizing: border-box;
+	text-align: left;
+}
+		
+
+/* la suite */
+main {
+  position: relative;
+  width: 800px;
+  border: 2px solid black;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  }
+
+main div:nth-of-type(2){
+    background-color: red;
+    transform-origin: 75px 75px;
+    transform: translate(50px,50px);
+    transform: translate(20em);
+}
+
+main div:nth-of-type(3){
+  background-color: blue;
+  transform-origin: 50% 50%;
+  transform: scale(5, 0.5);
+  transform: scaleX(5);
+}
+
+main div:nth-of-type(4){
+  background-color: green;
+  transform-origin: 50% 50%;
+  /*transform: rotate(720deg);*/
+  transform: rotate(60deg);
+}
+
+main div:nth-of-type(5){
+  background-color: yellow;
+  transform-origin: 50% 50%;
+  /*Valeurs entre 0 et 90deg pos ou négatives*/
+  transform: skewX(-45deg);
+  transform: skewY(45deg);
+  transform: skew(25deg, 40deg);
+}
+
+main div:nth-of-type(6){
+  background-color: violet;
+  transform-origin: 50% 50%;
+  transform: scale(0.5) rotate(45deg) translate(100px, 0) skew(20deg);
+}
+
+main div:nth-of-type(7):hover{
+  background-color: black;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
+}
+
+main div:nth-of-type(8){
+  background-color: orange;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+  transition: all 0.5s linear;
+}
+
+main div:nth-of-type(8):hover{
+  transform: rotate(3turn) scale(2);
+}
